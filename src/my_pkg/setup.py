@@ -22,6 +22,8 @@ setup(
         'console_scripts': [
             'simplepub = my_pkg.simplepub:main'
             'simplepub2 = my_pkg.simplesub:main'
+            'simpletimepub = my_pkg.simpletimepub:main'
+            'simpletimesub = my_pkg.simpletimesub:main'
         ],
     },
 )
