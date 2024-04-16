@@ -1,5 +1,5 @@
 import rclpy as rp
-import rclpy.node import Node # type: ignore
+from rclpy.node import Node
 from geometry_msgs.msg import Twist
 
 
@@ -21,7 +21,6 @@ def main():
     rp.init()
     node = SimplePub()
     rp.spin(node)
-    node.create_timer(1.0, print_hello)
     
 if __name__ == '__main__':
     main()
