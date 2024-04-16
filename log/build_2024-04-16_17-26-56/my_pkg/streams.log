@@ -1,0 +1,24 @@
+[0.669s] Invoking command in '/home/hyeonjoonpark/busan_ws/build/my_pkg': PYTHONPATH=/home/hyeonjoonpark/busan_ws/build/my_pkg/prefix_override:/home/hyeonjoonpark/busan_ws/install/my_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/hyeonjoonpark/busan_ws/build/my_pkg/build --no-deps symlink_data
+[0.913s] running develop
+[1.053s] running egg_info
+[1.053s] creating my_pkg.egg-info
+[1.053s] writing my_pkg.egg-info/PKG-INFO
+[1.053s] writing dependency_links to my_pkg.egg-info/dependency_links.txt
+[1.053s] writing entry points to my_pkg.egg-info/entry_points.txt
+[1.053s] writing requirements to my_pkg.egg-info/requires.txt
+[1.053s] writing top-level names to my_pkg.egg-info/top_level.txt
+[1.063s] writing manifest file 'my_pkg.egg-info/SOURCES.txt'
+[1.107s] reading manifest file 'my_pkg.egg-info/SOURCES.txt'
+[1.108s] writing manifest file 'my_pkg.egg-info/SOURCES.txt'
+[1.150s] running build_ext
+[1.150s] Creating /home/hyeonjoonpark/busan_ws/install/my_pkg/lib/python3.8/site-packages/site.py
+[1.152s] Creating /home/hyeonjoonpark/busan_ws/install/my_pkg/lib/python3.8/site-packages/my-pkg.egg-link (link to .)
+[1.153s] 
+[1.153s] Installed /home/hyeonjoonpark/busan_ws/build/my_pkg
+[1.153s] running symlink_data
+[1.153s] creating /home/hyeonjoonpark/busan_ws/install/my_pkg/share/ament_index
+[1.153s] creating /home/hyeonjoonpark/busan_ws/install/my_pkg/share/ament_index/resource_index
+[1.153s] creating /home/hyeonjoonpark/busan_ws/install/my_pkg/share/ament_index/resource_index/packages
+[1.153s] symbolically linking /home/hyeonjoonpark/busan_ws/build/my_pkg/resource/my_pkg -> /home/hyeonjoonpark/busan_ws/install/my_pkg/share/ament_index/resource_index/packages
+[1.153s] symbolically linking /home/hyeonjoonpark/busan_ws/build/my_pkg/package.xml -> /home/hyeonjoonpark/busan_ws/install/my_pkg/share/my_pkg
+[1.176s] Invoked command in '/home/hyeonjoonpark/busan_ws/build/my_pkg' returned '0': PYTHONPATH=/home/hyeonjoonpark/busan_ws/build/my_pkg/prefix_override:/home/hyeonjoonpark/busan_ws/install/my_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/hyeonjoonpark/busan_ws/build/my_pkg/build --no-deps symlink_data

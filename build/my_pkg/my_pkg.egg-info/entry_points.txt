@@ -1,0 +1,3 @@
+[console_scripts]
+simplepub = my_pkg.simplepub:main
+
