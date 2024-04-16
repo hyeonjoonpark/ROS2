@@ -1,25 +1,25 @@
-import rclpy as rp
+import rclpy
 from rclpy.node import Node
-from geometry_msgs.msg import Twist
 from std_msgs.msg import Header
 
-class SimpleTimePub(Node):
+class SimpleTimeSub(Node):
     def __init__(self):
-        super().__init__('simpleTimepub')
-        self.create_timer(1, self.timer_callback)
-        self.pub = self.create_publisher(Twist, '/turtle1/cmd_vel', 10)
+        super().__init__('simpleTimeSub') # type: ignore
+        self.pub = self.create_subscription(Header, 'timeTopic', self.sub_callback, 10)
 
-    def timer_callback(self):
+    def sub_callback(self, msg: Header):
         msg = Header()
-        msg.frame_id = 'time' + str(self.count)
-        msg.stamp = self.get_clock().now().to_msg()
-        self.pub.publish(msg)
-
+        print(f"frame_id: {msg.frame_id}")
+        print(f"stamp: {msg.stamp.sec}.{msg.stamp.nanosec}")
 
 def main():
-    rp.init()
-    node = SimpleTimePub()
-    rp.spin(node)
-    
+    rclpy.init()
+    node = SimpleTimeSub()
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        node.destroy_node()
+        rclpy.shutdown()
+
 if __name__ == '__main__':
     main()
