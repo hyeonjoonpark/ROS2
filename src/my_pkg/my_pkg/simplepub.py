@@ -13,7 +13,7 @@ class SimplePub(Node):
     def print_hello(self):
         msg = Twist()
         msg.linear.x = 0.5
-        msg.linear.z = 0.5
+        msg.linear.z = 0.0
         self.pub.publish(msg)
 
 
