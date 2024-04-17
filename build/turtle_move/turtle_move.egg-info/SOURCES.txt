@@ -1,6 +1,7 @@
 package.xml
 setup.cfg
 setup.py
+launch/moveTurtleSim.launch.py
 resource/turtle_move
 turtle_move/__init__.py
 turtle_move/moveTurtleSim.py
