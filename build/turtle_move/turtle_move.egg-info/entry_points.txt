@@ -1,0 +1,3 @@
+[console_scripts]
+moveTurtleSim = turtle_move.moveTurtleSim:main
+
